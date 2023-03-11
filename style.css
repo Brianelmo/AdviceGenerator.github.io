@@ -1,0 +1,96 @@
+:root {
+
+
+  --Cyan : hsl(193, 38%, 86%); 
+  --Neon : hsl(150, 100%, 66%) ; 
+
+  --Gblue : hsl(217, 19%, 38%); 
+  --Dgray : hsl(217, 19%, 24%); 
+  --Dblue : hsl(218, 23%, 16%); 
+
+  --Font : 'Manrope', sans-serif;
+
+} 
+
+
+
+body {
+  background-color: var(--Dblue);
+} 
+
+* {
+  font-family: var(--Font);
+} 
+
+
+.advice-id {
+  text-transform: uppercase; 
+  color: var(--Neon); 
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 800;
+} 
+
+.advice-text {
+  font-size: 1.5rem; 
+  color: var(--Cyan); 
+  font-weight: 800;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 15rem
+} 
+
+.advice { 
+  background-color: var(--Dgray);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
+  padding: 3rem; 
+  border-radius: 1rem; 
+  position: relative; 
+  width: 400px;
+}  
+  
+
+
+
+.refresh-btn { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;  
+  width: 3rem;
+  height: 3rem;
+  bottom: -10%; 
+  cursor: pointer;   
+  border-radius: 50%; 
+  background-color: var(--Neon);
+} 
+
+.refresh-btn:hover {
+  filter: drop-shadow(0 0 0.75rem hsl(150,100%,66%));
+  transition: all 0.3s ease-out;
+} 
+
+
+@media (max-width: 500px) {
+
+  .advice {
+    width: 250px;  
+  } 
+  
+  .line {
+    width: 300px;
+  }
+
+
+} 
+
